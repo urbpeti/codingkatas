@@ -10,6 +10,10 @@ describe('shortenSpeech', () => {
   });
 
   it('should shorten words after the fourth character if it is a vowel', () => {
-    expect(shortenSpeech('Hello coffee ?')).toBe('Hell. coff. ?');
+    expect(shortenSpeech('Hello coffee hexab ?')).toBe('Hell. coff. hex. ?');
+  });
+
+  it('should shorten words which are longer than 4 character at the first vowel', () => {
+    expect(shortenSpeech('vufmjrxpzjstmdyirrauindilnmoogedxygqktetoqzkpsbnuo')).toBe('vufmjrxpzjstmdy.');
   });
 });

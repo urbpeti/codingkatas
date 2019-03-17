@@ -9,8 +9,8 @@ function shortenWord(word) {
 }
 
 function shortenLongWord(word) {
-  const wordBase = word.slice(0, 4)
-  const appendix = shortenWordAtFirstVowel(word.slice(4))
+  const wordBase = word.slice(0, 3)
+  const appendix = shortenWordAtFirstVowel(word.slice(3))
   return wordBase + appendix
 }
 

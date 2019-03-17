@@ -8,4 +8,8 @@ describe('shortenSpeech', () => {
   it('should not modify words if it does not contains vowel after 3. character', () => {
     expect(shortenSpeech('Word world tttttt lhkjqrplmnbvx ?')).toBe('Word world tttttt lhkjqrplmnbvx ?');
   });
+
+  it('should shorten words after the fourth character if it is a vowel', () => {
+    expect(shortenSpeech('Hello coffee ?')).toBe('Hell. coff. ?');
+  });
 });

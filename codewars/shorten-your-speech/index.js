@@ -5,22 +5,22 @@ function shortenSpeech(str) {
 }
 
 function shortenWord(word) {
-  return word.length > 3 ? shortenLongWord(word) : word
+  return word.length > 3 ? shortenLongWord(word) : word;
 }
 
 function shortenLongWord(word) {
-  const wordBase = word.slice(0, 3)
-  const appendix = shortenWordAtFirstVowel(word.slice(3))
-  return wordBase + appendix
+  const wordBase = word.slice(0, 3);
+  const appendix = shortenWordAtFirstVowel(word.slice(3));
+  return wordBase + appendix;
 }
 
 function shortenWordAtFirstVowel(word) {
-  const firstVowelPosition = getFirstVowelPosition(word)
-  return firstVowelPosition == -1 ? word : word.slice(0,firstVowelPosition) + '.'
+  const firstVowelPosition = getFirstVowelPosition(word);
+  return firstVowelPosition === -1 ? word : `${word.slice(0, firstVowelPosition)}.`;
 }
 
 function getFirstVowelPosition(word) {
-  return word.search(/[aeiou]/gi)
+  return word.search(/[aeiou]/gi);
 }
 
 module.exports = shortenSpeech;

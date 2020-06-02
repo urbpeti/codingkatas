@@ -1,0 +1,6 @@
+version: '3'
+services:
+  codewars-javascript:
+    build: ./codewars/javascript
+    command:
+      - ./testall.sh

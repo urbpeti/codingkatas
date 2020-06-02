@@ -1,4 +1,4 @@
-const shortenSpeech = require('../');
+const shortenSpeech = require('./shorten-your-speech');
 
 describe('shortenSpeech', () => {
   it('should not modify words less then 4 character', () => {

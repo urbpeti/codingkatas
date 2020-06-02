@@ -4,3 +4,7 @@ services:
     build: ./codewars/javascript
     command:
       - ./testall.sh
+  codewars-typescript:
+    build: ./codewars/typescript
+    command:
+      - ./testall.sh

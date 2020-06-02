@@ -1,4 +1,4 @@
-const makePalindrome = require('../');
+const makePalindrome = require('./make-a-palindrome');
 
 describe('makePalindrome', () => {
   it('should return existing palindromes without modification', () => {
@@ -19,4 +19,3 @@ describe('makePalindrome', () => {
     expect(makePalindrome('leveled')).toBe('deleveled');
   });
 });
-

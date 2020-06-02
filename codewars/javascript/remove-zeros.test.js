@@ -1,4 +1,4 @@
-const removeZeros = require('..');
+const removeZeros = require('./remove-zeros');
 
 describe('Test cases', () => {
   test('Zero should be at the end', () => {

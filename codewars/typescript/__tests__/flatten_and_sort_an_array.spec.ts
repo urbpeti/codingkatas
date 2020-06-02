@@ -1,4 +1,4 @@
-import { flattenAndSort } from '../src/main';
+import { flattenAndSort } from '../src/flatten_and_sort_an_array';
 
 describe('flattenAndSort', () => {
   it('greets a user with `Hello, {name}` message', () => {

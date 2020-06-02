@@ -7,6 +7,6 @@ services:
       - test
   codewars-typescript:
     build: ./codewars/typescript
-    command:
+    command: 
       - npm
       - test

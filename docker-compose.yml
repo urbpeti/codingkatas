@@ -3,8 +3,10 @@ services:
   codewars-javascript:
     build: ./codewars/javascript
     command:
-      - ./testall.sh
+      - npm
+      - test
   codewars-typescript:
     build: ./codewars/typescript
     command:
-      - ./testall.sh
+      - npm
+      - test
